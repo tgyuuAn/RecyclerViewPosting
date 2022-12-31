@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="318dp"
+    android:layout_height="100dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <ImageView
+            android:src="@drawable/ic_launcher_background"
+            android:id="@+id/item_iv"
+            android:scaleType="fitXY"
+            android:layout_width="54dp"
+            android:layout_height="60dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="10dp"/>
+
+        <TextView
+            android:id="@+id/item_tv_name"
+            android:layout_width="166dp"
+            android:layout_height="15dp"
+            android:text="예시 이름"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:letterSpacing="-0.03"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/item_iv"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"/>
+
+        <TextView
+            android:id="@+id/item_tv_descripition"
+            android:layout_width="166dp"
+            android:layout_height="40dp"
+            android:text="예시 본문"
+            android:textSize="12sp"
+            android:letterSpacing="-0.03"
+            app:layout_constraintTop_toBottomOf="@id/item_tv_name"
+            app:layout_constraintStart_toEndOf="@id/item_iv"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="20dp"/>
+
+        <TextView
+            android:id="@+id/item_tv_time"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:text="2022-12-30"
+            android:textSize="10sp"
+            android:textColor="@color/gray"
+            android:letterSpacing="-0.03"
+            app:layout_constraintStart_toEndOf="@id/item_tv_descripition"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/lightgray"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
